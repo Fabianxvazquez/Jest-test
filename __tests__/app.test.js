@@ -1,6 +1,8 @@
 import {
   originalArray,
   doubleArray,
+  evensOnlyArray,
+  arraySum,
 } from '../app'
 
 describe ('originalArray', () =>{
@@ -12,5 +14,17 @@ describe ('originalArray', () =>{
  describe ('doubleArray', () => {
    test('should double each number in array', ()=>{
     expect(doubleArray([1,2,3,4])).toEqual([2,4,6,8])
+   })
+ })
+
+ describe ('evensOnlyArray', () => {
+   test('should return only even numbers', ()=>{
+    expect(evensOnlyArray([1,2,3,4])).toEqual([2,4])
+   })
+ })
+
+ describe ('arraySum', ()=> {
+   test('should add all numbers', ()=>{
+     expect(arraySum([1,2,3,4])).toEqual(10)
    })
  })
