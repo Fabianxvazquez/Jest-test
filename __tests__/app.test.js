@@ -3,6 +3,9 @@ import {
   doubleArray,
   evensOnlyArray,
   arraySum,
+  allNumbersGreaterThanZero,
+  someNumbersAreOdd,
+  evensOnlyAndDoubleArray,
 } from '../app'
 
 describe ('originalArray', () =>{
@@ -26,5 +29,23 @@ describe ('originalArray', () =>{
  describe ('arraySum', ()=> {
    test('should add all numbers', ()=>{
      expect(arraySum([1,2,3,4])).toEqual(10)
+   })
+ })
+
+ describe ('allNumbersGreaterThanZero', ()=>{
+   test('should return all numbers', ()=>{
+     expect(allNumbersGreaterThanZero([1,2,3,4])).toEqual(true)
+   })
+ })
+
+ describe('someNumbersAreOdd', ()=>{
+   test('showing odd nums', ()=>{
+     expect(someNumbersAreOdd([1,2,3,4])).toEqual(true)
+   })
+ })
+
+ describe('evensOnlyAndDoubleArray', ()=>{
+   test('pull even numbers then double them', ()=>{
+    expect(evensOnlyAndDoubleArray([1,2,3,4])).toEqual([4,8])
    })
  })

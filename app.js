@@ -22,13 +22,19 @@ export const arraySum = (numberArray) => {
 } 
 
 // return true if every item greater than 0
-allNumbersGreaterThanZero(numberArray) // => true; use every
+export const allNumbersGreaterThanZero = (numberArray) => {
+  return numberArray.every(number => number > 0)
+} // => true; use every
 
 // return true if some one or more items odd*
-someNumbersAreOdd(numberArray) // => true; use some
+export const someNumbersAreOdd = (numberArray) => {
+  return numberArray.some(elem => elem = 1)
+} // => true; use some
 
 // return array double and even
-evensOnlyAndDoubleArray(numberArray) // => [4,8]; // use map and filter
+export const evensOnlyAndDoubleArray = (numberArray) => {
+  return numberArray.filter(item => item % 2 === 0).map(item => item * 2)
+} // => [4,8]; // use map and filter
 
 // find an item method return 'not found' if not found
 findItem(numberArray, 1) //=> 1
@@ -59,3 +65,5 @@ numberOfLikes(artists) //=> 300; // get all likes
 findObjByName(artists, 'a') // => {name: 'a', likes:200}
 // returns array of artist sorted by likes
 sortArtistByName(artists)
+
+
